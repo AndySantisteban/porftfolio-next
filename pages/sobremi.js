@@ -8,7 +8,7 @@ const Sobremi = () => (
           <div className="row">
             <div className="col-md-4 mx-auto text-center">
               <img
-                src="yo.jpg"
+                src="yo2.jpg"
                 alt=""
                 className="img-fluid mb-4 mt-4 rounded "
                 width="90%"
@@ -29,39 +29,41 @@ const Sobremi = () => (
               </p>
               <p>Skills:</p>
               <p>
-                <img
-                  src="https://img.icons8.com/small/32/ffffff/html-5.png"
-                  className="ms-2"
-                />
-                <img
-                  src="https://img.icons8.com/material/32/ffffff/css3.png"
-                  className="ms-2"
-                />
+                <div className="text-center">
+                  <img
+                    src="https://img.icons8.com/small/32/ffffff/html-5.png"
+                    className="ms-2"
+                  />
+                  <img
+                    src="https://img.icons8.com/material/32/ffffff/css3.png"
+                    className="ms-2"
+                  />
 
-                <img
-                  src="https://img.icons8.com/ios-filled/32/ffffff/javascript.png"
-                  className="ms-2"
-                />
-                <img
-                  src="https://img.icons8.com/ios-filled/32/ffffff/jquery.png"
-                  className="ms-2"
-                />
-                <img
-                  src="https://img.icons8.com/windows/32/ffffff/php-logo.png"
-                  className="ms-2"
-                />
-                <img
-                  src="https://img.icons8.com/ios/32/ffffff/mysql-logo.png"
-                  className="ms-2"
-                />
-                <img
-                  src="https://img.icons8.com/windows/32/ffffff/node-js.png"
-                  className="ms-2"
-                />
-                <img
-                  src="https://img.icons8.com/carbon-copy/32/ffffff/react.png"
-                  className="ms-2"
-                />
+                  <img
+                    src="https://img.icons8.com/ios-filled/32/ffffff/javascript.png"
+                    className="ms-2"
+                  />
+                  <img
+                    src="https://img.icons8.com/ios-filled/32/ffffff/jquery.png"
+                    className="ms-2"
+                  />
+                  <img
+                    src="https://img.icons8.com/windows/32/ffffff/php-logo.png"
+                    className="ms-2"
+                  />
+                  <img
+                    src="https://img.icons8.com/ios/32/ffffff/mysql-logo.png"
+                    className="ms-2"
+                  />
+                  <img
+                    src="https://img.icons8.com/windows/32/ffffff/node-js.png"
+                    className="ms-2"
+                  />
+                  <img
+                    src="https://img.icons8.com/carbon-copy/32/ffffff/react.png"
+                    className="ms-2"
+                  />
+                </div>
               </p>
             </div>
           </div>

@@ -54,6 +54,8 @@ const Proyectos = () => (
             </small>
           </div>
         </div>
+      </div>
+      <div className="card-group">
         <div className="card mb-2 ms-2 me-2">
           <img src="portafolio.png" className="card-img-top" />
           <div className="card-body">

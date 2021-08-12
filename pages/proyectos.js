@@ -4,8 +4,8 @@ const Proyectos = () => (
   <Layout>
     <h1 className="text-center ">My Proyects</h1>
     <div className="container p-3">
-      <div className="card-deck">
-        <div className="card mb-2">
+      <div className="card-group">
+        <div className="card mb-2 ms-2 me-2">
           <img src="portfolio-react.png" className="card-img-top img-fluid" />
           <div className="card-body">
             <h5 className="card-title">Portfolio-React</h5>
@@ -20,7 +20,7 @@ const Proyectos = () => (
             </small>
           </div>
         </div>
-        <div className="card mb-2">
+        <div className="card mb-2 ms-2 me-2">
           <img src="paginaweb.png" className="card-img-top img-fluid" />
           <div className="card-body">
             <h5 className="card-title">Product catalog</h5>
@@ -37,7 +37,7 @@ const Proyectos = () => (
             </small>
           </div>
         </div>
-        <div className="card mb-2">
+        <div className="card mb-2 ms-2 me-2">
           <img src="liga-española.png" className="card-img-top" />
           <div className="card-body">
             <h5 className="card-title">Players list</h5>
@@ -54,7 +54,7 @@ const Proyectos = () => (
             </small>
           </div>
         </div>
-        <div className="card mb-2">
+        <div className="card mb-2 ms-2 me-2">
           <img src="portafolio.png" className="card-img-top" />
           <div className="card-body">
             <h5 className="card-title">Portfolio Basic</h5>
@@ -69,7 +69,7 @@ const Proyectos = () => (
             </small>
           </div>
         </div>
-        <div className="card mb-2">
+        <div className="card mb-2 ms-2 me-2">
           <img src="CRUD-BASIC.png" className="card-img-top" />
           <div className="card-body">
             <h5 className="card-title">CRUD agenda</h5>
@@ -82,19 +82,6 @@ const Proyectos = () => (
                 https://github.com/AndySantisteban/Crud
               </a>{' '}
             </small>
-          </div>
-        </div>
-        <div className="card mb-2">
-          <img src="infotec-control-de-datos.png" className="card-img-top" />
-          <div className="card-body">
-            <h5 className="card-title">warehouse and product control system</h5>
-            <p className="card-text">
-              Warehouse and sales control system made with php, js, mysql, html,
-              css, bootstrap and xampp technologies
-            </p>
-          </div>
-          <div className="card-footer">
-            <small className="text-muted">To go up</small>
           </div>
         </div>
       </div>

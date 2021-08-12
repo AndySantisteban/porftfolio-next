@@ -7,7 +7,6 @@ const Index = () => (
       <div className="jumbotron">
         <h2 className="display-6">I'm Andy Santisteban. </h2>
         <h3 className="display-10">Web developer </h3>
-        <p className="lead">¡Welcome to my portfolio!</p>
         <hr className="my-4"></hr>
         <Link href="/contacto">
           <button type="button" className="btn btn-dark">

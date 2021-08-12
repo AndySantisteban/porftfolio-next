@@ -1,0 +1,4 @@
+.show > .navbar-nav {
+  display: block;
+  position: absolute;
+}

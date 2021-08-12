@@ -2,37 +2,37 @@ import Layout from '../components/Layout'
 
 const Proyectos = () => (
   <Layout>
-    <h1 className="text-center ">My Proyects</h1>
+    <h1 className="text-center ">My Projects</h1>
     <div className="container p-3">
       <div className="card-group">
         <div className="card mb-2 ms-2 me-2">
-          <img src="portfolio-react.png" className="card-img-top img-fluid" />
+          <img src="blog.png" className="card-img-top img-fluid" />
           <div className="card-body">
-            <h5 className="card-title">Portfolio-React</h5>
-            <p className="card-text">website made in react</p>
+            <h5 className="card-title">Blog Andy Santisteban</h5>
+            <p className="card-text">Blog Personal made in Next.js</p>
           </div>
           <div className="card-footer">
             <small className="text-muted">
               Site:{' '}
-              <a href="https://portafolio-andy-santisteban.netlify.app/">
-                https://portafolio-andy-santisteban.netlify.app/
+              <a href="https://blog-andy.vercel.app/">
+                https://blog-andy.vercel.app/
               </a>{' '}
             </small>
           </div>
         </div>
         <div className="card mb-2 ms-2 me-2">
-          <img src="paginaweb.png" className="card-img-top img-fluid" />
+          <img src="infotec.png" className="card-img-top img-fluid" />
           <div className="card-body">
-            <h5 className="card-title">Product catalog</h5>
+            <h5 className="card-title">Product catalog Infotec</h5>
             <p className="card-text">
-              This website displays the products available in a store
+              This website displays the products available in a store (Advance)
             </p>
           </div>
           <div className="card-footer">
             <small className="text-muted">
               Site:{' '}
-              <a href="https://avance-sitio-web.netlify.app/">
-                https://avance-sitio-web.netlify.app/
+              <a href="https://infotec-cat-de-productos.vercel.app/">
+                https://infotec-cat-de-productos.vercel.app/
               </a>{' '}
             </small>
           </div>
@@ -57,16 +57,16 @@ const Proyectos = () => (
       </div>
       <div className="card-group">
         <div className="card mb-2 ms-2 me-2">
-          <img src="portafolio.png" className="card-img-top" />
+          <img src="notas.png" className="card-img-top" />
           <div className="card-body">
-            <h5 className="card-title">Portfolio Basic</h5>
-            <p className="card-text">A basic portfolio made in html, css</p>
+            <h5 className="card-title">Notes App</h5>
+            <p className="card-text">App Notes using Firebase!</p>
           </div>
           <div className="card-footer">
             <small className="text-muted">
               Site:{' '}
-              <a href="https://andysantisteban-paginaweb.netlify.app/">
-                https://andysantisteban-paginaweb.netlify.app/
+              <a href="https://blog-de-notas.vercel.app/auth/register">
+                https://blog-de-notas.vercel.app/auth/register
               </a>
             </small>
           </div>
@@ -82,6 +82,21 @@ const Proyectos = () => (
               Site:{' '}
               <a href="https://github.com/AndySantisteban/Crud">
                 https://github.com/AndySantisteban/Crud
+              </a>{' '}
+            </small>
+          </div>
+        </div>
+        <div className="card mb-2 ms-2 me-2">
+          <img src="jni.png" className="card-img-top" />
+          <div className="card-body">
+            <h5 className="card-title">Nazareno's Church</h5>
+            <p className="card-text">(Advance)</p>
+          </div>
+          <div className="card-footer">
+            <small className="text-muted">
+              Site:{' '}
+              <a href="https://jni-ferrenafe.vercel.app/">
+                https://jni-ferrenafe.vercel.app/
               </a>{' '}
             </small>
           </div>

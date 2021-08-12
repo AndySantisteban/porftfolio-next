@@ -28,43 +28,42 @@ const Sobremi = () => (
                 myself to web development.
               </p>
               <p>Skills:</p>
-              <p>
-                <div className="text-center">
-                  <img
-                    src="https://img.icons8.com/small/32/ffffff/html-5.png"
-                    className="ms-2"
-                  />
-                  <img
-                    src="https://img.icons8.com/material/32/ffffff/css3.png"
-                    className="ms-2"
-                  />
 
-                  <img
-                    src="https://img.icons8.com/ios-filled/32/ffffff/javascript.png"
-                    className="ms-2"
-                  />
-                  <img
-                    src="https://img.icons8.com/ios-filled/32/ffffff/jquery.png"
-                    className="ms-2"
-                  />
-                  <img
-                    src="https://img.icons8.com/windows/32/ffffff/php-logo.png"
-                    className="ms-2"
-                  />
-                  <img
-                    src="https://img.icons8.com/ios/32/ffffff/mysql-logo.png"
-                    className="ms-2"
-                  />
-                  <img
-                    src="https://img.icons8.com/windows/32/ffffff/node-js.png"
-                    className="ms-2"
-                  />
-                  <img
-                    src="https://img.icons8.com/carbon-copy/32/ffffff/react.png"
-                    className="ms-2"
-                  />
-                </div>
-              </p>
+              <div className="text-center">
+                <img
+                  src="https://img.icons8.com/small/32/ffffff/html-5.png"
+                  className="ms-2"
+                />
+                <img
+                  src="https://img.icons8.com/material/32/ffffff/css3.png"
+                  className="ms-2"
+                />
+
+                <img
+                  src="https://img.icons8.com/ios-filled/32/ffffff/javascript.png"
+                  className="ms-2"
+                />
+                <img
+                  src="https://img.icons8.com/ios-filled/32/ffffff/jquery.png"
+                  className="ms-2"
+                />
+                <img
+                  src="https://img.icons8.com/windows/32/ffffff/php-logo.png"
+                  className="ms-2"
+                />
+                <img
+                  src="https://img.icons8.com/ios/32/ffffff/mysql-logo.png"
+                  className="ms-2"
+                />
+                <img
+                  src="https://img.icons8.com/windows/32/ffffff/node-js.png"
+                  className="ms-2"
+                />
+                <img
+                  src="https://img.icons8.com/carbon-copy/32/ffffff/react.png"
+                  className="ms-2"
+                />
+              </div>
             </div>
           </div>
         </div>

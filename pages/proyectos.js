@@ -1,108 +1,67 @@
 import Layout from '../components/Layout'
 
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1,
+    slidesToSlide: 1
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1,
+    slidesToSlide: 1
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1
+  }
+};
 const Proyectos = () => (
   <Layout>
-    <h1 className="text-center ">My Projects</h1>
-    <div className="container p-3">
-      <div className="card-group">
-        <div className="card mb-2 ms-2 me-2">
-          <img src="blog.png" className="card-img-top img-fluid" />
-          <div className="card-body">
-            <h5 className="card-title">Blog Andy Santisteban</h5>
-            <p className="card-text">Blog Personal made in Next.js</p>
-          </div>
-          <div className="card-footer">
-            <small className="text-muted">
-              Site:{' '}
-              <a href="https://blog-andy.vercel.app/">
-                https://blog-andy.vercel.app/
-              </a>{' '}
-            </small>
-          </div>
-        </div>
-        <div className="card mb-2 ms-2 me-2">
-          <img src="infotec.png" className="card-img-top img-fluid" />
-          <div className="card-body">
-            <h5 className="card-title">Product catalog Infotec</h5>
-            <p className="card-text">
-              This website displays the products available in a store (Advance)
-            </p>
-          </div>
-          <div className="card-footer">
-            <small className="text-muted">
-              Site:{' '}
-              <a href="https://infotec-cat-de-productos.vercel.app/">
-                https://infotec-cat-de-productos.vercel.app/
-              </a>{' '}
-            </small>
-          </div>
-        </div>
-        <div className="card mb-2 ms-2 me-2">
-          <img src="liga-española.png" className="card-img-top" />
-          <div className="card-body">
-            <h5 className="card-title">Players list</h5>
-            <p className="card-text">
-              This website shows you the updated players of the Spanish league
-            </p>
-          </div>
-          <div className="card-footer">
-            <small className="text-muted">
-              Site:{' '}
-              <a href="https://equipos-la-liga.netlify.app/">
-                https://equipos-la-liga.netlify.app/
-              </a>
-            </small>
-          </div>
-        </div>
+    <h3 className="text-center ">My Projects</h3>
+      <div className="container__carousel">
+          <Carousel
+              responsive={responsive}
+          >
+              <div  className="container__carousel__img">
+                  <img src="blog.png"  alt={"..."} width={"100%"}    />
+                  <p>My Blog : <span><a href="https://blog-andy.vercel.app" target={"_blank"}>https://blog-andy.vercel.app</a></span></p>
+              </div>
+              <div className="container__carousel__img">
+                  <img src="infotec.png"  alt={"..."} width={"100%"}  />
+                  <p>Catalogo</p>
+              </div>
+              <div className="container__carousel__img">
+                  <img src="liga-española.png" alt={"..."} width={"100%"}  />
+                  <p>Api Spanish Liga</p>
+              </div>
+              <div className="container__carousel__img">
+                  <img src="notas.png"  alt={"..."} width={"100%"}  />
+                  <p> App Notes with Firebase : <span><a href="https://blog-de-notas.vercel.app" target={"_blank"}>https://blog-de-notas.vercel.app</a></span></p>
+              </div>
+              <div className="container__carousel__img">
+                  <img src="CRUD-BASIC.png"  alt={"..."} width={"100%"}  />
+                  <p> Crud PHP D'SamiStore</p>
+              </div>
+          </Carousel>
       </div>
-      <div className="card-group">
-        <div className="card mb-2 ms-2 me-2">
-          <img src="notas.png" className="card-img-top" />
-          <div className="card-body">
-            <h5 className="card-title">Notes App</h5>
-            <p className="card-text">App Notes using Firebase!</p>
-          </div>
-          <div className="card-footer">
-            <small className="text-muted">
-              Site:{' '}
-              <a href="https://blog-de-notas.vercel.app/auth/register">
-                https://blog-de-notas.vercel.app/auth/register
-              </a>
-            </small>
-          </div>
-        </div>
-        <div className="card mb-2 ms-2 me-2">
-          <img src="CRUD-BASIC.png" className="card-img-top" />
-          <div className="card-body">
-            <h5 className="card-title">CRUD agenda</h5>
-            <p className="card-text">Crud made in PHP, MySql</p>
-          </div>
-          <div className="card-footer">
-            <small className="text-muted">
-              Site:{' '}
-              <a href="https://github.com/AndySantisteban/Crud">
-                https://github.com/AndySantisteban/Crud
-              </a>{' '}
-            </small>
-          </div>
-        </div>
-        <div className="card mb-2 ms-2 me-2">
-          <img src="jni.png" className="card-img-top" />
-          <div className="card-body">
-            <h5 className="card-title">Nazareno's Church</h5>
-            <p className="card-text">(Advance)</p>
-          </div>
-          <div className="card-footer">
-            <small className="text-muted">
-              Site:{' '}
-              <a href="https://jni-ferrenafe.vercel.app/">
-                https://jni-ferrenafe.vercel.app/
-              </a>{' '}
-            </small>
-          </div>
-        </div>
-      </div>
-    </div>
+    <style jsx>
+    {`
+        .container__carousel{
+          width: 80%;
+          margin :0 auto;
+        }
+        @media (max-width: 768px) {
+          .container__carousel{
+            width: 100%;
+          }
+        }
+    `}
+    </style>
   </Layout>
 )
 export default Proyectos

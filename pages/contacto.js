@@ -8,6 +8,7 @@ const Contacto = () => {
   }
   return (
     <Layout>
+
       <h1 className="text-center">Contact</h1>
       <div className="container p-2">
         <form name="contact" method="POST" onSubmit={handleSubmit}>
@@ -22,7 +23,7 @@ const Contacto = () => {
               className="form-control"
               placeholder="example@domain.com"
               required={true}
-            ></input>
+              />
             <ValidationError
               prefix="Email"
               field="email"
@@ -39,7 +40,7 @@ const Contacto = () => {
               name="message"
               rows="3"
               required={true}
-            ></textarea>
+              />
             <ValidationError
               prefix="Message"
               field="message"
@@ -60,13 +61,13 @@ const Contacto = () => {
       </div>
       <div className="container d-flex justify-content-center ">
         <a href="https://www.facebook.com/AndySantisteban1607/" className="m-3">
-          <img src="https://img.icons8.com/metro/40/000000/facebook-new--v2.png" />
+          <img src="https://img.icons8.com/metro/40/000000/facebook-new--v2.png" alt={"..."}/>
         </a>
         <a href="https://wa.link/5ayf76" className="m-3">
-          <img src="https://img.icons8.com/pastel-glyph/40/000000/whatsapp--v2.png" />
+          <img src="https://img.icons8.com/pastel-glyph/40/000000/whatsapp--v2.png" alt={"..."} />
         </a>
         <a href="https://www.linkedin.com/in/andy-santisteban/" className="m-3">
-          <img src="https://img.icons8.com/android/40/000000/linkedin.png" />
+          <img src="https://img.icons8.com/android/40/000000/linkedin.png" alt={"..."}/>
         </a>
       </div>
     </Layout>

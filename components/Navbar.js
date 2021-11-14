@@ -3,49 +3,66 @@ import Link from 'next/link'
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container">
-          <Link href="/">
-            <a className="navbar-brand">Home</a>
-          </Link>
-
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="#navbarNav"
-            aria-expanded="true"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon "></span>
-          </button>
-          <div className="collapse navbar-collapse " id="navbarNav">
-            <ul className="navbar-nav  ">
-              <li className="nav-item active">
+      <nav className="navbar">
+         <ul className="navbar__list">
+            <li >
+                <Link href="/">
+                    <a className="navbar__list__item ">Home</a>
+                </Link>
+            </li>
+              <li>
                 <Link href="/sobremi">
-                  <a className="nav-link">About me</a>
+                  <a className="navbar__list__item" >About</a>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li>
                 <Link href="/proyectos">
-                  <a className="nav-link">Projects</a>
+                  <a className="navbar__list__item">Projects</a>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li>
                 <Link href="/github">
-                  <a className="nav-link">Github</a>
+                  <a className="navbar__list__item">Github</a>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li >
                 <Link href="/contacto">
-                  <a className="nav-link">Contact</a>
+                  <a className="navbar__list__item">Contact</a>
                 </Link>
               </li>
             </ul>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      <style jsx>
+          {`
+            .navbar{
+             background: #1F2937;
+            font-family: 'Inter', sans-serif;
+            }
+            .navbar__list{
+            display: flex;
+            justify-content: flex-start;
+            color: white;
+            padding: 1rem 1rem;
+            }
+            .navbar__list__item{
+            color: white;
+            padding: 0 0.5rem;
+            font-size: 13px;
+            
+            }
+            .navbar__list__item:hover{
+              color:gray;
+            }
+            @media (max-width: 768px) {
+              .navbar__list{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+              }  
+            }
+          `}
+      </style>
+
     </>
   )
 }

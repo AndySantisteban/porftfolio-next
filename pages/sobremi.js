@@ -1,6 +1,8 @@
 import Layout from '../components/Layout'
+
 const Sobremi = () => (
   <Layout>
+
     <h1 className="text-center">About me</h1>
     <header className="row ">
       <div className="col-md-12 ">
@@ -33,35 +35,43 @@ const Sobremi = () => (
                 <img
                   src="https://img.icons8.com/small/32/ffffff/html-5.png"
                   className="ms-2"
+                  alt={"..."}
                 />
                 <img
                   src="https://img.icons8.com/material/32/ffffff/css3.png"
                   className="ms-2"
+                  alt={"..."}
                 />
 
                 <img
                   src="https://img.icons8.com/ios-filled/32/ffffff/javascript.png"
                   className="ms-2"
+                  alt={"..."}
                 />
                 <img
                   src="https://img.icons8.com/ios-filled/32/ffffff/jquery.png"
                   className="ms-2"
+                  alt={"..."}
                 />
                 <img
                   src="https://img.icons8.com/windows/32/ffffff/php-logo.png"
                   className="ms-2"
+                  alt={"..."}
                 />
                 <img
                   src="https://img.icons8.com/ios/32/ffffff/mysql-logo.png"
                   className="ms-2"
+                  alt={"..."}
                 />
                 <img
                   src="https://img.icons8.com/windows/32/ffffff/node-js.png"
                   className="ms-2"
+                  alt={"..."}
                 />
                 <img
                   src="https://img.icons8.com/carbon-copy/32/ffffff/react.png"
                   className="ms-2"
+                  alt={"..."}
                 />
               </div>
             </div>

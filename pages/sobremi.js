@@ -13,8 +13,8 @@ const MyImage = (props) => {
           loader={myLoader}
           src="yo2.jpg"
           alt="AndySantisteban"
-          width={250}
-          height={250}
+          width={300}
+          height={300}
           className={props.className}
           loading={"lazy"}
       />

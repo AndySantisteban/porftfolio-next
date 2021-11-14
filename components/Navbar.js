@@ -62,7 +62,6 @@ const Navbar = () => {
             }
           `}
       </style>
-
     </>
   )
 }

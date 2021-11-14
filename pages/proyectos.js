@@ -26,6 +26,7 @@ const Proyectos = () => (
       <div className="container__carousel">
           <Carousel
               responsive={responsive}
+              infinite={true}
           >
               <div  className="container__carousel__img">
                   <img src="blog.png"  alt={"..."} width={"100%"}    />
@@ -52,7 +53,7 @@ const Proyectos = () => (
     <style jsx>
     {`
         .container__carousel{
-          width: 80%;
+          width: 60%;
           margin :0 auto;
         }
         @media (max-width: 768px) {

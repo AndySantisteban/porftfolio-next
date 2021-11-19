@@ -1,6 +1,5 @@
 import Layout from '../components/Layout'
 import { useState, useEffect } from 'react'
-import { Image } from 'next/image'
 const Github = () => {
     const [error, setError] = useState(null)
     const [repos, setRepos] = useState([])
@@ -76,7 +75,7 @@ const Github = () => {
                                                 <p>Not Repositories</p>
                                                 :
                                                 nameRepos.map((item) =>{
-                                                    return (<span>{item} ==><br/> </span>)
+                                                    return (<span>{item} <br/> </span>)
                                                 })
                                             }
                                         </div>
@@ -93,6 +92,9 @@ const Github = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="card__body">
+                                    <p className="card__body__span">This data was taken from the Github API.</p>
+                                </div>
                             </div>
                             <div className="card">
                                 <div className="card__header">
@@ -108,11 +110,15 @@ const Github = () => {
                                     <p className="card__body__tittle">Biography:</p>
                                     <p className="card__body__content">{bio}</p>
                                 </div>
+                                <div className="card__body">
+                                    <p className="card__body__span">This data was taken from the Github API.</p>
+                                </div>
                                 <div className="card__footer">
                                     <p className="card__footer__item"><img src="https://img.icons8.com/material-outlined/12/000000/code-fork.png" alt={"..."}/> : {repos}</p>
                                     <p className="card__footer__item"><img src="https://img.icons8.com/fluency/12/000000/star.png" alt="..."/> : {followers}</p>
                                     <p className="card__footer__item"><img src="https://img.icons8.com/external-prettycons-flat-prettycons/12/000000/external-favorite-essentials-prettycons-flat-prettycons.png" alt={"..."}/> : {following}</p>
                                 </div>
+                                
                             </div>
                         </>
                 }
@@ -179,6 +185,10 @@ const Github = () => {
                 }
                 .card__body__content{
                   margin-left: 2rem;
+                }
+                .card__body__span{
+                    margin-left: 2rem;
+                    color: #6B7280;
                 }
                 .card__footer{
                   display: flex;

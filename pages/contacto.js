@@ -2,6 +2,7 @@ import Layout from '../components/Layout'
 import { useState } from 'react'
 import { useForm, ValidationError } from '@formspree/react'
 import Modal from 'react-modal';
+import Fade from 'react-reveal/Fade';
 
 const customStyles = {
   content: {
@@ -31,6 +32,8 @@ const Contacto = () => {
   return (
     <Layout>
       <div className="box">
+        <Fade>
+
         <p className={"tittle"}>Contact me, you won't regret it</p>
         <div className="container">
           <form name="contact" method="POST" onSubmit={handleSubmit}>
@@ -93,7 +96,10 @@ const Contacto = () => {
             <img src="https://img.icons8.com/fluency/40/000000/linkedin.png"   alt={"..."}/>
           </a>
         </div>
+        </Fade>
+
       </div>
+
       <Modal
           isOpen={success}
           onRequestClose={closeModal}
@@ -107,6 +113,7 @@ const Contacto = () => {
         </div>
 
       </Modal>
+
       <style jsx>
         {`  
           .tittle{

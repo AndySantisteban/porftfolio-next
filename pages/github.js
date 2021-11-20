@@ -1,5 +1,7 @@
 import Layout from '../components/Layout'
 import { useState, useEffect } from 'react'
+import Fade from 'react-reveal/Fade';
+
 const Github = () => {
     const [error, setError] = useState(null)
     const [repos, setRepos] = useState([])
@@ -61,6 +63,7 @@ const Github = () => {
     }, [])
     return (
         <Layout >
+        <Fade>
             <div className="container__profile">
                 {
                     error?
@@ -68,7 +71,7 @@ const Github = () => {
                         <>
                             <div className="container__profile__hero">
                                 <div>
-                                    <button onClick={()=>{GithubNameRepos()}}>Repositories</button>
+                                    <button onClick={()=>{GithubNameRepos()}}>Load repositories</button>
                                     <div className="container__profile__hero__repos">
                                         <div className="container__profile__hero__repos__descriptions">
                                             <h3>Names:</h3>
@@ -76,7 +79,7 @@ const Github = () => {
                                                 <p>Not Repositories</p>
                                                 :
                                                 nameRepos.map((item) =>{
-                                                    return (<span className={"item_repo"}>{item} <br/> </span>)
+                                                    return (<Fade left><span className={"item_repo"}>{item} <br/> </span></Fade>)
                                                 })
                                             }
                                         </div>
@@ -86,7 +89,8 @@ const Github = () => {
                                                     <p>Not Descriptions</p>
                                                     :
                                                     descriptionRepos.map((item) =>{
-                                                        return (<span className={"item_repo"}>{item===null? <span >Not Description</span>: item}<br/></span>)
+                                                        return ( <Fade left><span className={"item_repo"}>{item===null? <span >Not Description</span>: item}<br/></span></Fade>
+                                                        )
                                                     })
 
                                                 }
@@ -103,21 +107,21 @@ const Github = () => {
                                 </div>
                                 <div className="card__body">
                                     <p className="card__body__tittle">User name:</p>
-                                    <p className="card__body__content">{username}</p>
+                                    <Fade><p className="card__body__content">{username}</p></Fade>
                                     <p className="card__body__tittle">Location:</p>
-                                    <p className="card__body__content">{location}</p>
+                                    <Fade><p className="card__body__content">{location}</p></Fade>
                                     <p className="card__body__tittle">Twitter:</p>
-                                    <p className="card__body__content">@{email?email: "Not Email" }</p>
+                                    <Fade><p className="card__body__content">@{email?email: "Not Twitter" }</p></Fade>
                                     <p className="card__body__tittle">Biography:</p>
-                                    <p className="card__body__content">{bio}</p>
+                                    <Fade><p className="card__body__content">{bio}</p></Fade>
                                 </div>
                                 <div className="card__body">
                                     <p className="card__body__span">This data was taken from the Github API.</p>
                                 </div>
                                 <div className="card__footer">
-                                    <p className="card__footer__item"><img src="https://img.icons8.com/material-outlined/12/000000/code-fork.png" alt={"..."}/> : {repos}</p>
-                                    <p className="card__footer__item"><img src="https://img.icons8.com/fluency/12/000000/star.png" alt="..."/> : {followers}</p>
-                                    <p className="card__footer__item"><img src="https://img.icons8.com/external-prettycons-flat-prettycons/12/000000/external-favorite-essentials-prettycons-flat-prettycons.png" alt={"..."}/> : {following}</p>
+                                    <Fade><p className="card__footer__item"><img src="https://img.icons8.com/material-outlined/12/000000/code-fork.png" alt={"..."}/> : {repos}</p></Fade>
+                                    <Fade><p className="card__footer__item"><img src="https://img.icons8.com/fluency/12/000000/star.png" alt="..."/> : {followers}</p></Fade>
+                                        <Fade><p className="card__footer__item"><img src="https://img.icons8.com/external-prettycons-flat-prettycons/12/000000/external-favorite-essentials-prettycons-flat-prettycons.png" alt={"..."}/> : {following}</p></Fade>
                                 </div>
                             </div>
                         </>
@@ -165,6 +169,7 @@ const Github = () => {
                     </div>
                 </div>
             </div>
+            </Fade>
             <style jsx>{`
                 .container__profile{
                   display: flex;
@@ -239,8 +244,6 @@ const Github = () => {
                 display: flex;
                 justify-content: space-around;
                 padding: 10px;
-                }
-                
                 }
                 .card__body__tittle{
                   font-weight: bold;

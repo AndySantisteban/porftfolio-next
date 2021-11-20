@@ -1,8 +1,7 @@
 import Layout from '../components/Layout'
-import Link from "next/link";
 import Image from "next/image";
-
-
+import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 const myLoader = ({ src, width, quality, }) => {
   return `https://andysantisteban.com/${src}?w=${width}&q=${quality || 75}`
 }
@@ -13,8 +12,8 @@ const MyImage = (props) => {
           loader={myLoader}
           src="yo2.jpg"
           alt="AndySantisteban"
-          width={300}
-          height={300}
+          width={250}
+          height={250}
           className={props.className}
           loading={"lazy"}
       />
@@ -27,6 +26,7 @@ const Sobremi = () => (
         <MyImage className='layout__index__img'/>
       </div>
       <div className="layout__index__container">
+        <Fade>
         <div >
           <h1 className="container__header">Andy Santisteban</h1>
           <h3 className="container__header">Web Developer</h3>
@@ -52,6 +52,7 @@ const Sobremi = () => (
             <b>Stack:</b>
           </p>
           <div className="container__skills">
+            <Slide left>
             <img src="https://img.icons8.com/color/32/000000/html-5--v1.png"
                  className="container__skills__item"
                  alt={"..."}
@@ -100,8 +101,10 @@ const Sobremi = () => (
                  className="container__skills__item"
                  alt={"..."}
             />
-          </div>
+          </Slide>
         </div>
+        </div>
+        </Fade>
       </div>
     </div>
     <style jsx>

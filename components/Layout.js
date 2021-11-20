@@ -41,6 +41,7 @@ const Layout = ({ children }) => (
               font-family: 'Inter', sans-serif;
               background: #1F2937;
               color: white;
+              cursor: pointer;
             }
           `}
       </style>

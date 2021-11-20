@@ -1,8 +1,7 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
 import Image from "next/image";
-
-
+import Fade from 'react-reveal/Fade';
 const myLoader = ({ src, width, quality, }) => {
   return `https://andysantisteban.com/${src}?w=${width}&q=${quality || 75}`
 }
@@ -17,6 +16,7 @@ const MyImage = (props) => {
           height={250}
           className={props.className}
           loading={"lazy"}
+          unoptimized={true}
       />
   )
 }
@@ -26,6 +26,7 @@ const Index = () => (
       <div>
         <MyImage className='layout__index__img'/>
       </div>
+      <Fade Left>
       <div className="layout__index__container">
         <h2 >I'm Andy Santisteban. </h2>
         <h3 >Web developer </h3>
@@ -48,9 +49,10 @@ const Index = () => (
             </button>
           </Link>
         </div>
-
       </div>
+      </Fade>
     </div>
+
     <style jsx>
       {`
         

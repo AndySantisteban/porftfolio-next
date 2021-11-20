@@ -1,27 +1,31 @@
 import Layout from '../components/Layout'
+import Fade from 'react-reveal/Fade';
+
 const Proyectos = () => (
   <Layout>
     <h3 className="text-center ">My Projects</h3>
+      <Fade>
           <div className="container__carousel">
-              <div  className="container__carousel__img">
-                <a href="https://blog-andy.vercel.app"  target={"_blank"}>
-                    <div className={"container__carousel__img__anchor"}>
-                        <div className={"container__carousel__img__anchor__icon"}>
-                            <img src="https://img.icons8.com/ios-glyphs/20/ffffff/link--v1.png"  alt={"..."}/>
-                        </div>
-                    </div>
-                  <img src="blog.png"  alt={"..."} width={"100%"} height={"55%"}    />
-                  <p className="container__carousel__img__footer">My Blog </p>
-                  <div className="container__carousel__img__footer__stack">
+                  <div  className="container__carousel__img">
+                      <a href="https://blog-andy.vercel.app"  target={"_blank"}>
+                          <div className={"container__carousel__img__anchor"}>
+                              <div className={"container__carousel__img__anchor__icon"}>
+                                  <img src="https://img.icons8.com/ios-glyphs/20/ffffff/link--v1.png"  alt={"..."}/>
+                              </div>
+                          </div>
+                          <img src="blog.png"  alt={"..."} width={"100%"} height={"55%"}    />
+                          <p className="container__carousel__img__footer">My Blog </p>
+                          <div className="container__carousel__img__footer__stack">
                       <span  title="Markdown">
                         <img src="https://img.icons8.com/material-outlined/30/000000/markdown.png" alt="..."/>
                       </span>
-                      <span  title="React">
+                              <span  title="React">
                         <img src="https://img.icons8.com/color/30/000000/react-native.png" alt ="..."/>
                       </span>
+                          </div>
+                      </a>
                   </div>
-                </a>
-              </div>
+
               <div className="container__carousel__img">
                 <a href="https://www.npmjs.com/package/jsonwebtoken-template" target={"_blank"}>
                     <div className={"container__carousel__img__anchor"}>
@@ -167,6 +171,7 @@ const Proyectos = () => (
                 </a>
               </div>
           </div>
+      </Fade>
     <style jsx>
     {`
         .container__carousel{

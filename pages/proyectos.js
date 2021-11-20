@@ -135,41 +135,41 @@ const Proyectos = () => (
                   </div>
                 </a>
               </div>
-              <div className="container__carousel__img">
+              {/*<div className="container__carousel__img">*/}
 
-                <a href="http://3.93.189.69/" target={"_blank"}>
-                    <div className={"container__carousel__img__anchor"}>
-                        <div className={"container__carousel__img__anchor__icon"}>
-                            <img src="https://img.icons8.com/ios-glyphs/20/ffffff/link--v1.png"  alt={"..."}/>
-                        </div>
-                    </div>
-                  <img src="nube-industrial.png"  alt={"..."} width={"100%"} height={"55%"}  />
-                  <p className="container__carousel__img__footer">Nube Industrial</p>
-                  <div className="container__carousel__img__footer__stack">
-                      <span title="Bootrapp">
-                        <img src="https://img.icons8.com/color/30/000000/bootstrap.png" alt ="..."/>
-                      </span>
-                      <span  title="Material UI">
-                        <img src="https://img.icons8.com/color/30/000000/material-ui.png" alt ="..."/>
-                      </span>
-                      <span  title="React">
-                        <img src="https://img.icons8.com/color/30/000000/react-native.png" alt ="..."/>
-                      </span>
-                      <span title="JavaScript">
-                        <img src="https://img.icons8.com/color/30/000000/javascript--v1.png" alt="..."/>
-                      </span>
-                      <span title="GraphQL">
-                        <img src="https://img.icons8.com/color/30/000000/graphql.png" alt="..."/>
-                      </span>
-                      <span title="Apollo Client/Server">
-                        <img src="https://img.icons8.com/color/30/000000/apollo.png" alt="..."/>
-                      </span>
-                      <span title="JWT">
-                        <img src="https://img.icons8.com/color/30/000000/java-web-token.png" alt="..."/>
-                      </span>
-                  </div>
-                </a>
-              </div>
+              {/*  <a href="http://3.93.189.69/" target={"_blank"}>*/}
+              {/*      <div className={"container__carousel__img__anchor"}>*/}
+              {/*          <div className={"container__carousel__img__anchor__icon"}>*/}
+              {/*              <img src="https://img.icons8.com/ios-glyphs/20/ffffff/link--v1.png"  alt={"..."}/>*/}
+              {/*          </div>*/}
+              {/*      </div>*/}
+              {/*    <img src="nube-industrial.png"  alt={"..."} width={"100%"} height={"55%"}  />*/}
+              {/*    <p className="container__carousel__img__footer">Nube Industrial</p>*/}
+              {/*    <div className="container__carousel__img__footer__stack">*/}
+              {/*        <span title="Bootrapp">*/}
+              {/*          <img src="https://img.icons8.com/color/30/000000/bootstrap.png" alt ="..."/>*/}
+              {/*        </span>*/}
+              {/*        <span  title="Material UI">*/}
+              {/*          <img src="https://img.icons8.com/color/30/000000/material-ui.png" alt ="..."/>*/}
+              {/*        </span>*/}
+              {/*        <span  title="React">*/}
+              {/*          <img src="https://img.icons8.com/color/30/000000/react-native.png" alt ="..."/>*/}
+              {/*        </span>*/}
+              {/*        <span title="JavaScript">*/}
+              {/*          <img src="https://img.icons8.com/color/30/000000/javascript--v1.png" alt="..."/>*/}
+              {/*        </span>*/}
+              {/*        <span title="GraphQL">*/}
+              {/*          <img src="https://img.icons8.com/color/30/000000/graphql.png" alt="..."/>*/}
+              {/*        </span>*/}
+              {/*        <span title="Apollo Client/Server">*/}
+              {/*          <img src="https://img.icons8.com/color/30/000000/apollo.png" alt="..."/>*/}
+              {/*        </span>*/}
+              {/*        <span title="JWT">*/}
+              {/*          <img src="https://img.icons8.com/color/30/000000/java-web-token.png" alt="..."/>*/}
+              {/*        </span>*/}
+              {/*    </div>*/}
+              {/*  </a>*/}
+              {/*</div>*/}
           </div>
       </Fade>
     <style jsx>

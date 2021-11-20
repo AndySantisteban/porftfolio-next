@@ -36,7 +36,6 @@ const Navbar = () => {
           {`
             .navbar{
              background: #1F2937;
-            font-family: 'Inter', sans-serif;
             }
             .navbar__list{
             display: flex;

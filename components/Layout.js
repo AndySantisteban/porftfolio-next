@@ -1,18 +1,13 @@
 import Navbar from './Navbar'
-import Head from 'next/head'
 const Layout = ({ children }) => (
   <>
-    <Head>
-      <title>My portfolio - Andy santisteban</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
-            rel="stylesheet"
-        />
-    </Head>
     <Navbar />
     <main className="container">{children}</main>
       <style global jsx>
           {`
+            html{
+            font-family: 'Inter', sans-serif;
+            }
             body {
             margin:0;
             padding:0;
@@ -26,7 +21,7 @@ const Layout = ({ children }) => (
               box-sizing: border-box;
             }
             ul{
-              margin:0px;
+              margin:0;
               list-style: none;
               padding:0;
             }

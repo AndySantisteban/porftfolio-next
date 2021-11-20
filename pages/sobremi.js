@@ -96,6 +96,10 @@ const Sobremi = () => (
                  className="container__skills__item"
                  alt={"..."}
             />
+            <img src="https://img.icons8.com/color/32/000000/mongodb.png"
+                 className="container__skills__item"
+                 alt={"..."}
+            />
           </div>
         </div>
       </div>

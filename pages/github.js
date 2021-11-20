@@ -25,11 +25,12 @@ const Github = () => {
         }).then(data => {
             setUsername(data.login)
             setLocation(data.location)
-            setEmail(data.email)
             setBio(data.bio)
             setFollowing(data.following)
             setFollowers(data.followers)
             setRepos(data.public_repos)
+            setEmail(data.twitter_username)
+
         })
     }
     const GithubNameRepos = () =>{
@@ -67,7 +68,7 @@ const Github = () => {
                         <>
                             <div className="container__profile__hero">
                                 <div>
-                                    <button onClick={()=>{GithubNameRepos()}}>Load Repositories</button>
+                                    <button onClick={()=>{GithubNameRepos()}}>Repositories</button>
                                     <div className="container__profile__hero__repos">
                                         <div className="container__profile__hero__repos__descriptions">
                                             <h3>Names:</h3>
@@ -75,20 +76,20 @@ const Github = () => {
                                                 <p>Not Repositories</p>
                                                 :
                                                 nameRepos.map((item) =>{
-                                                    return (<span>{item} <br/> </span>)
+                                                    return (<span className={"item_repo"}>{item} <br/> </span>)
                                                 })
                                             }
                                         </div>
                                         <div className="container__profile__hero__repos__descriptions">
                                             <h3>Descriptions:</h3>
-                                            { descriptionRepos==[]?
-                                                <p>Not Descriptions</p>
-                                                :
-                                                descriptionRepos.map((item) =>{
-                                                    return (<span>{item===null? <span>Not Description</span>: item}<br/></span>)
-                                                })
+                                                { descriptionRepos==[]?
+                                                    <p>Not Descriptions</p>
+                                                    :
+                                                    descriptionRepos.map((item) =>{
+                                                        return (<span className={"item_repo"}>{item===null? <span >Not Description</span>: item}<br/></span>)
+                                                    })
 
-                                            }
+                                                }
                                         </div>
                                     </div>
                                 </div>
@@ -105,8 +106,8 @@ const Github = () => {
                                     <p className="card__body__content">{username}</p>
                                     <p className="card__body__tittle">Location:</p>
                                     <p className="card__body__content">{location}</p>
-                                    <p className="card__body__tittle">Email:</p>
-                                    <p className="card__body__content">{email?email: "Not Email" }</p>
+                                    <p className="card__body__tittle">Twitter:</p>
+                                    <p className="card__body__content">@{email?email: "Not Email" }</p>
                                     <p className="card__body__tittle">Biography:</p>
                                     <p className="card__body__content">{bio}</p>
                                 </div>
@@ -118,15 +119,56 @@ const Github = () => {
                                     <p className="card__footer__item"><img src="https://img.icons8.com/fluency/12/000000/star.png" alt="..."/> : {followers}</p>
                                     <p className="card__footer__item"><img src="https://img.icons8.com/external-prettycons-flat-prettycons/12/000000/external-favorite-essentials-prettycons-flat-prettycons.png" alt={"..."}/> : {following}</p>
                                 </div>
-                                
                             </div>
                         </>
                 }
             </div>
+            <div className="container__profile">
+                <div className="card__secondary">
+                    <div className="card__header">
+                        <h3>Technologies to be learned</h3>
+                    </div>
+                    <div className="card__body__secondary">
+                        <p>Short-term</p>
+                    </div>
+                    <div className="card__body__secondary">
+                       <span title={"Postgres SQL"}>
+                            <img src="https://img.icons8.com/color/40/000000/postgreesql.png" alt={"..."}/>
+                       </span>
+                        <span title={"Typescript"}>
+                            <img src="https://img.icons8.com/color/40/000000/typescript.png"  alt={"..."}/>
+                       </span>
+                        <span title={"Vue.js"}>
+                            <img src="https://img.icons8.com/color/40/000000/vue-js.png"  alt={"..."}/>
+                       </span>
+                        <span title={"Golang"}>
+                            <img src="https://img.icons8.com/color/40/000000/golang.png"   alt={"..."}/>
+                       </span>
+
+                    </div>
+                    <div className="card__body__secondary">
+                        <p >Long-term</p>
+                    </div>
+                    <div className="card__body__secondary">
+                        <span title={"Django"}>
+                              <img src="https://img.icons8.com/color/40/000000/django.png"   alt={"..."}/>
+                        </span>
+                        <span title={"Symfony"}>
+                             <img src="https://img.icons8.com/color/40/000000/symfony.png"  alt={"..."}/>
+                        </span>
+                        <span title={"Laravel"}>
+                            <img src="https://img.icons8.com/fluency/40/000000/laravel.png"  alt={"..."}/>
+                        </span>
+                    </div>
+                    <div className="card__footer">
+                        <p className="card__footer__item">Andy Santisteban</p>
+                    </div>
+                </div>
+            </div>
             <style jsx>{`
                 .container__profile{
                   display: flex;
-                  flex-direction: row;
+                  flex-direction: row-reverse;
                 }
                 .container__profile__hero{
                 width: 60%;
@@ -148,7 +190,17 @@ const Github = () => {
                     box-shadow: 0px 0px 50px #eaeaea;
                     font-size: 12px;
                 }
-                
+                .card__secondary{
+                    margin-top: 20px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 50px #eaeaea;
+                    font-size: 12px;
+                }
                 .card__header{
                     display: flex;
                     justify-content: center;
@@ -179,6 +231,16 @@ const Github = () => {
                 }
                 .container__profile__hero__repos__descriptions{
                   width: 50%;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden
+                }
+                .card__body__secondary{
+                display: flex;
+                justify-content: space-around;
+                padding: 10px;
+                }
+                
                 }
                 .card__body__tittle{
                   font-weight: bold;
@@ -205,7 +267,7 @@ const Github = () => {
                 }
                 @media ( max-width: 768px) {
                     .container__profile{
-                        flex-direction: column;
+                        flex-direction: column-reverse;
                     }
                     .container__profile__hero{
                         margin: 20px 0;
@@ -239,7 +301,7 @@ const Github = () => {
                         height: 30%;
                         padding: 0 50px;
                     }
-
+                    
                     
                 }
             `}

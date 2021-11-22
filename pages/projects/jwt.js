@@ -47,9 +47,6 @@ const Jwt = () => {
     
     console.log(decoded)
             `}</pre>
-            <p>
-                In this project we make a small catalog of products in a static way.
-            </p>
 
             <p>
                 Visit: <a href="https://www.npmjs.com/package/jsonwebtoken-template" target="_blank" rel="noopener noreferrer">https://www.npmjs.com/package/ jsonwebtoken-template</a>

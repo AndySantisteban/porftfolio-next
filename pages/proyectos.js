@@ -77,20 +77,6 @@ const Proyectos = () => (
                 <More href="/projects/snake" props={"See more ..."}/>
             </div>
                 <div className="container__carousel__img">
-                    <Anchor href="https://github.com/AndySantisteban/DSamiStore" target={"_blank"}/>
-                    <img src="CRUD-BASIC.png" alt={"..."} width={"100%"} height={"55%"}/>
-                    <p className="container__carousel__img__footer">D'SamiStore</p>
-                    <div className="container__carousel__img__footer__stack">
-                        <IconStack src={"https://img.icons8.com/color/30/000000/html-5--v1.png"} props={"HTML5"}/>
-                        <IconStack src={"https://img.icons8.com/color/30/000000/css3.png"} props={"CSS3"}/>
-                        <IconStack src={"https://img.icons8.com/color/30/000000/javascript.png"} props={"Javascript"}/>
-                        <IconStack src={"https://img.icons8.com/color/30/000000/mysql-logo.png"} props={"MySql"}/>
-                        <IconStack src={"https://img.icons8.com/officel/30/000000/php-logo.png"} props={"PHP"}/>
-                        <IconStack src={"https://img.icons8.com/color/30/000000/bootstrap.png"} props={"Bootsrap"}/>
-                    </div>
-                    <More href="/projects/dsamistore" props={"See more ..."}/>
-                </div>
-                <div className="container__carousel__img">
                     <Anchor href="https://www.npmjs.com/package/test-and-convert-types" target={"_blank"}/>
                     <img src="package1.png" alt={"..."} width={"100%"} height={"55%"}/>
                     <p className="container__carousel__img__footer"> Package NPM test</p>

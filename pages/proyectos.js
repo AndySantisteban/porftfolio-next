@@ -76,33 +76,61 @@ const Proyectos = () => (
                 </div>
                 <More href="/projects/snake" props={"See more ..."}/>
             </div>
-                {/*<div className="container__carousel__img__preview">*/}
-                {/*    <img src="nube-industrial.png"  alt={"..."} width={"100%"} height={"55%"} className={"container__carousel__img__preview"} />*/}
-                {/*    <p className="container__carousel__img__footer container__carousel">Nube Industrial</p>*/}
-                {/*    <div className="container__carousel__img__footer__stack container__carousel__img__preview">*/}
-                {/*        <span title="Bootrapp">*/}
-                {/*          <img src="https://img.icons8.com/color/30/000000/bootstrap.png" alt ="..."/>*/}
-                {/*        </span>*/}
-                {/*        <span  title="Material UI">*/}
-                {/*          <img src="https://img.icons8.com/color/30/000000/material-ui.png" alt ="..."/>*/}
-                {/*        </span>*/}
-                {/*        <span  title="React">*/}
-                {/*          <img src="https://img.icons8.com/color/30/000000/react-native.png" alt ="..."/>*/}
-                {/*        </span>*/}
-                {/*        <span title="JavaScript">*/}
-                {/*          <img src="https://img.icons8.com/color/30/000000/javascript--v1.png" alt="..."/>*/}
-                {/*        </span>*/}
-                {/*        <span title="GraphQL">*/}
-                {/*          <img src="https://img.icons8.com/color/30/000000/graphql.png" alt="..."/>*/}
-                {/*        </span>*/}
-                {/*        <span title="Apollo Client/Server">*/}
-                {/*          <img src="https://img.icons8.com/color/30/000000/apollo.png" alt="..."/>*/}
-                {/*        </span>*/}
-                {/*        <span title="JWT">*/}
-                {/*          <img src="https://img.icons8.com/color/30/000000/java-web-token.png" alt="..."/>*/}
-                {/*        </span>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
+                <div className="container__carousel__img">
+                    <Anchor href="https://github.com/AndySantisteban/DSamiStore" target={"_blank"}/>
+                    <img src="CRUD-BASIC.png" alt={"..."} width={"100%"} height={"55%"}/>
+                    <p className="container__carousel__img__footer">D'SamiStore</p>
+                    <div className="container__carousel__img__footer__stack">
+                        <IconStack src={"https://img.icons8.com/color/30/000000/html-5--v1.png"} props={"HTML5"}/>
+                        <IconStack src={"https://img.icons8.com/color/30/000000/css3.png"} props={"CSS3"}/>
+                        <IconStack src={"https://img.icons8.com/color/30/000000/javascript.png"} props={"Javascript"}/>
+                        <IconStack src={"https://img.icons8.com/color/30/000000/mysql-logo.png"} props={"MySql"}/>
+                        <IconStack src={"https://img.icons8.com/officel/30/000000/php-logo.png"} props={"PHP"}/>
+                        <IconStack src={"https://img.icons8.com/color/30/000000/bootstrap.png"} props={"Bootsrap"}/>
+                    </div>
+                    <More href="/projects/dsamistore" props={"See more ..."}/>
+                </div>
+                <div className="container__carousel__img">
+                    <Anchor href="https://www.npmjs.com/package/test-and-convert-types" target={"_blank"}/>
+                    <img src="package1.png" alt={"..."} width={"100%"} height={"55%"}/>
+                    <p className="container__carousel__img__footer"> Package NPM test</p>
+                    <div className="container__carousel__img__footer__stack">
+                        <IconStack src={"https://img.icons8.com/color/30/000000/nodejs.png"} props={"Node.js"}/>
+                        <IconStack src={"https://img.icons8.com/color/30/000000/npm.png"} props={"NPM"}/>
+                        <IconStack src={"https://img.icons8.com/color/30/000000/javascript.png"} props={"Javascript"}/>
+                    </div>
+                    <More href="/projects/test-and-convert-types" props={"See more ..."}/>
+                </div>
+                <div className="container__carousel__img__preview">
+                    <img src="nube-industrial.png"  alt={"..."} width={"100%"} height={"55%"} className={"container__carousel__img__preview"} />
+                    <p className="container__carousel__img__footer container__carousel">.....................</p>
+                    <div className="container__carousel__img__footer__stack container__carousel__img__preview">
+                        <span title="Bootrapp">
+                          <img src="https://img.icons8.com/color/30/000000/bootstrap.png" alt ="..."/>
+                        </span>
+                        <span  title="Material UI">
+                          <img src="https://img.icons8.com/color/30/000000/material-ui.png" alt ="..."/>
+                        </span>
+                        <span  title="React">
+                          <img src="https://img.icons8.com/color/30/000000/react-native.png" alt ="..."/>
+                        </span>
+                        <span title="JavaScript">
+                          <img src="https://img.icons8.com/color/30/000000/javascript--v1.png" alt="..."/>
+                        </span>
+                        <span title="GraphQL">
+                          <img src="https://img.icons8.com/color/30/000000/graphql.png" alt="..."/>
+                        </span>
+                        <span title="Apollo Client/Server">
+                          <img src="https://img.icons8.com/color/30/000000/apollo.png" alt="..."/>
+                        </span>
+                        <span title="JWT">
+                          <img src="https://img.icons8.com/color/30/000000/java-web-token.png" alt="..."/>
+                        </span>
+                    </div>
+                </div>
+                <div className="container__carousel__img__comming">
+                        <p className="container__carousel__img__footer"> If you want to know more about my projects, you can contact me and I will tell you my ideas...</p>
+                </div>
             </div>
         </Fade>
         <style jsx>
@@ -119,11 +147,19 @@ const Proyectos = () => (
                 position: relative;
 
               }
+              .container__carousel__img__comming{
+                border-radius: 10px;
+                background-color: #F9FAFB;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
               .container__carousel__img__preview{
                 border-radius: 10px;
                 background-color: #F9FAFB;
                 position: relative;
-                filter: blur(1px);
+                filter: blur(2px);
                 color: transparent;
                 text-shadow: 0 0 5px rgba(0,0,0,0.2);
                 webkit-user-select: none;

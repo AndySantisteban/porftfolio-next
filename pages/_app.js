@@ -8,9 +8,8 @@ function MyApp({Component, pageProps}) {
                 <meta charSet="utf-8"/>
                 <link rel="icon" href="/yo2_1.png"/>
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
+                    href="https://fonts.googleapis.com/css2?family=Inter"
                     rel="stylesheet preload"
-
                 />
             </Head>
             <Component {...pageProps} />

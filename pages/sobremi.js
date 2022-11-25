@@ -1,11 +1,11 @@
-import Layout from '../components/Layout'
 import Image from "next/image";
-import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 import IconStack from "../components/IconStack";
+import Layout from '../components/Layout';
 
 const myLoader = ({src, width, quality,}) => {
-    return `https://andysantisteban.com/${src}?w=${width}&q=${quality || 75}`
+    return `https://andysantisteban.soy.pe/${src}?w=${width}&q=${quality || 75}`
 }
 
 const MyImage = (props) => {

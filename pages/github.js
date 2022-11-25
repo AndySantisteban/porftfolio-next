@@ -1,7 +1,7 @@
-import Layout from '../components/Layout'
-import {useState, useEffect} from 'react'
+import { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import IconStack from "../components/IconStack";
+import Layout from '../components/Layout';
 
 const Github = () => {
     const [error, setError] = useState(null)
@@ -48,11 +48,12 @@ const Github = () => {
         ).then(res => {
             return res.json()
         }).then(data => {
+            console.log(data)
             setNameRepos(data.map(repo => {
                 return repo.name
             }))
             setDescriptionRepos(data.map(repo => {
-                return repo.description
+                return repo.html_url
             }))
         }).catch(err => {
             console.log(err)
@@ -89,14 +90,14 @@ const Github = () => {
                                                 }
                                             </div>
                                             <div className="container__profile__hero__repos__descriptions">
-                                                <h3>Descriptions:</h3>
+                                                <h3>Url:</h3>
                                                 {descriptionRepos == [] ?
                                                     <p>Not Descriptions</p>
                                                     :
                                                     descriptionRepos.map((item) => {
                                                         return (
                                                             <Fade left><span className={"item_repo"}>{item === null ?
-                                                                <span>Not Description</span> : item}<br/></span></Fade>
+                                                                <span>Not Description</span> : <a href={item} target={"__blank"}>{item}</a>}<br/></span></Fade>
                                                         )
                                                     })
 

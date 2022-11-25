@@ -1,8 +1,7 @@
-import Layout from '../components/Layout'
-import Link from 'next/link'
 import Image from "next/image";
+import Link from 'next/link';
 import Fade from 'react-reveal/Fade';
-import Anchor from '../components/Anchor'
+import Layout from '../components/Layout';
 
 const myLoader = ({src, width, quality,}) => {
     return `https://andysantisteban.com/${src}?w=${width}&q=${quality || 75}`

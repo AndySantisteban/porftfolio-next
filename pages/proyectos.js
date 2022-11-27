@@ -361,6 +361,53 @@ const Proyectos = () => (
             </span>
           </div>
         </div>
+        <div className="container__carousel__img">
+          <Anchor href="https://boardkanban.vercel.app/" target={"_blank"} />
+          <img
+            src="kanban-board.png"
+            alt={"..."}
+            width={"100%"}
+            height={"55%"}
+          />
+          <p className="container__carousel__img__footer container__carousel">
+            Kanban Board - App
+          </p>
+          <div className="container__carousel__img__footer__stack container__carousel__img__preview">
+            <span title="React">
+              <img
+                src="https://img.icons8.com/color/30/000000/react-native.png"
+                alt="..."
+              />
+            </span>
+            <span title="Typescript">
+              <img
+                src="https://img.icons8.com/color/30/000000/typescript.png"
+                alt="..."
+              />
+            </span>
+          </div>
+        </div>
+        <div className="container__carousel__img">
+          <Anchor href="https://www.hashpassword.tk/" target={"_blank"} />
+          <img src="hashpass.png" alt={"..."} width={"100%"} height={"55%"} />
+          <p className="container__carousel__img__footer container__carousel">
+            Hash Pass
+          </p>
+          <div className="container__carousel__img__footer__stack container__carousel__img__preview">
+            <IconStack
+              src={"https://img.icons8.com/color/30/000000/html-5--v1.png"}
+              props={"HTML5"}
+            />
+            <IconStack
+              src={"https://img.icons8.com/color/30/000000/css3.png"}
+              props={"CSS3"}
+            />
+            <IconStack
+              src={"https://img.icons8.com/color/30/000000/javascript.png"}
+              props={"Javascript"}
+            />
+          </div>
+        </div>
         <div className="container__carousel__img__comming">
           <small className="container__carousel__img__footer">
             These are some of my projects, most of them are on github, if you

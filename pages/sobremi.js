@@ -99,18 +99,16 @@ const Sobremi = () => (
               extensive knowledge in frontend development, taking the initiative
               to carry out new implementations, that leads to be able to create
               scalable products with architectures that should be used in all
-              projects but unfortunately do not get to implement as DDD, Clean
-              Architecture and TDD.
+              projects where I got to implement DDD, Clean Arquitecture and TDD.
+              with architectures that should be used in all projects where I got
+              to implement DDD, Clean Arquitecture and TDD. <br />
+              In my experience I have been able to work on any type of project,
+              from just frontend to where I cover more roles and thanks to that
               <br />
-              In my experience I have been able to work in any kind of projects
-              (mostly as FreeLancer), from just frontend to where I cover more
-              roles and thanks to that I understand and watch over the welfare
-              of the project with the technology that is required for the
-              moment.
-              <br />
-              Adding to the above I am a person who likes to work in a team that
-              suits the environment in which he works and provides encouragement
-              to his teammates.
+              I understand and watch over the welfare of the project with the
+              technology that is required for the moment. Adding to the above I
+              am a person who likes to work in a team that suits the environment
+              in which he works and provides encouragement to his teammates.
               <br />I like to work day and night if necessary to move forward
               the project with the role that I am given.
             </p>

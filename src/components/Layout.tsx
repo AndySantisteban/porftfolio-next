@@ -3,7 +3,7 @@ import { Flex, Layout as AntdLayout, Menu } from 'antd'
 import { Content, Footer } from 'antd/es/layout/layout'
 import Sider from 'antd/es/layout/Sider'
 import type { MenuProps } from 'antd'
-import { TbCode, TbHome, TbMail } from 'react-icons/tb'
+import { TbArrowFork, TbCode, TbHome, TbMail } from 'react-icons/tb'
 import { useMediaQuery } from '../hooks/useMediaQuery'
 type MenuItem = Required<MenuProps>['items'][number]
 
@@ -14,10 +14,23 @@ const items: MenuItem[] = [
         icon: <TbHome />,
     },
     {
+        key: 'experience',
+        label: 'Experiencia Laboral',
+        icon: <TbArrowFork />,
+    },
+    {
         key: 'proyects',
         label: 'Proyectos',
         icon: <TbCode />,
         children: [
+            {
+                key: 'signape',
+                label: 'Signape  (Deep Learning)',
+            },
+            {
+                key: 'cultivame',
+                label: 'Cultivame (Deep Learning)',
+            },
             {
                 key: 'snake',
                 label: 'Snake Filter',

@@ -1,5 +1,5 @@
 import { Button, Col, Row } from 'antd'
-import Yo from '/yo2_1.png'
+import Yo from '/person-with-logos.png'
 
 function Index() {
     return (
@@ -18,7 +18,14 @@ function Index() {
                             marginTop: '20px',
                         }}
                     >
-                        <Button type="default">Contactar</Button>
+                        <Button
+                            type="default"
+                            onClick={() => {
+                                window.location.href = '/Profile.pdf'
+                            }}
+                        >
+                            Descargar CV
+                        </Button>
                     </div>
                 </Col>
                 <Col xs={24} sm={24} md={12} lg={12} xl={12} style={{ textAlign: 'center' }}>

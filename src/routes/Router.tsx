@@ -11,6 +11,8 @@ import Notas from '../components/projects/notas'
 import Experience from '../pages/Experience/Experience'
 import Signape from '../components/projects/signape'
 import Cultivame from '../components/projects/cultivame'
+import FirstAutomation from '../components/projects/first-automation'
+// import HassPassword from '../components/projects/hash-password'
 
 function Router() {
     return (
@@ -28,6 +30,8 @@ function Router() {
                         <Route path="/proyects/notas" element={<Notas />} />
                         <Route path="/proyects/cultivame" element={<Cultivame />} />
                         <Route path="/proyects/signape" element={<Signape />} />
+                        <Route path="/proyects/first-automation-web" element={<FirstAutomation />} />
+                        {/* <Route path="/proyects/hass-password" element={<HassPassword />} /> */}
                         <Route path="/contact" element={<Contact />} />
                     </Route>
                 </Routes>

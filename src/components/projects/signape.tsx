@@ -1,4 +1,5 @@
 import Link from 'antd/es/typography/Link'
+import Grid from '../Grid'
 
 function Signape() {
     return (
@@ -13,11 +14,10 @@ function Signape() {
                 <br />
                 <Link href="https://signape.onrender.com/">https://signape.onrender.com/</Link>
                 <br />
-                <div style={{ textAlign: 'center' }}>
-                    <img src="/signape-homepage.png" alt="" width={'50%'} />
-                    <br />
-                    <iframe width={'50%'} height={'600px'} src="https://media.licdn.com/dms/document/media/D4E1FAQHHIr4dkl67IQ/feedshare-document-pdf-analyzed/0/1711724288117?e=1728518400&v=beta&t=ZI0P0pSpvxT3simkhJSQd1naMTVrdIKru25rGSw8u5M" />
-                </div>
+                <Grid>
+                    <img src="/signape-homepage.png" alt="" width={'80%'} />
+                    <iframe height={'600px'} src="https://media.licdn.com/dms/document/media/D4E1FAQHHIr4dkl67IQ/feedshare-document-pdf-analyzed/0/1711724288117?e=1728518400&v=beta&t=ZI0P0pSpvxT3simkhJSQd1naMTVrdIKru25rGSw8u5M" />
+                </Grid>
             </div>
         </div>
     )

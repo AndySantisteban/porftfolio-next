@@ -24,6 +24,18 @@ const items: MenuItem[] = [
         icon: <TbCode />,
         children: [
             {
+                key: 'first-automation-web',
+                label: 'First Automation (web)',
+            },
+            // {
+            //     key: 'first-automation-app',
+            //     label: 'First Automation (app) - Nube industrial',
+            // },
+            // {
+            //     key: 'hash-password',
+            //     label: 'Hash Password / Password Generator',
+            // },
+            {
                 key: 'signape',
                 label: 'Signape  (Deep Learning)',
             },
@@ -34,10 +46,6 @@ const items: MenuItem[] = [
             {
                 key: 'snake',
                 label: 'Snake Filter',
-            },
-            {
-                key: 'blog',
-                label: 'Blog',
             },
             {
                 key: 'jwt',

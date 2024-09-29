@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "author": "Andy Santisteban",
+        "date": "2022-01-01",
+        "title": "¿Còmo ser desarrollador web en el 2024?",
+        "subtitle": "Basado en mi experiencia" 
+    },
+    {
+        "id": 2,
+        "author": "Andy Santisteban",
+        "date": "2022-01-01",
+        "title": "Tendencias en Inteligencia Artificial: Aplicaciones Revolucionarias",
+        "subtitle": "Contenido introductorio sobre la importancia de la IA en la actualidad." 
+    },
+    {
+        "id": 3,
+        "author": "Andy Santisteban",
+        "date": "2022-01-01",
+        "title": "Blockchain más allá de las Criptomonedas: Casos de Uso Innovadores",
+        "subtitle": "Breve explicación sobre la tecnología blockchain y su alcance" 
+    },
+    {
+        "id": 4,
+        "author": "Andy Santisteban",
+        "date": "2022-01-01",
+        "title": "Desarrollo Web Moderno: Frameworks y Herramientas Imprescindibles",
+        "subtitle": "Breve contexto sobre la evolución del desarrollo web y la necesidad de frameworks y herramientas modernas" 
+    }
+]

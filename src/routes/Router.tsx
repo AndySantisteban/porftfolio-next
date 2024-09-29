@@ -12,11 +12,13 @@ import Experience from '../pages/Experience/Experience'
 import Signape from '../components/projects/signape'
 import Cultivame from '../components/projects/cultivame'
 import FirstAutomation from '../components/projects/first-automation'
+import Post from '../pages/Blog/Blog'
+import { HelmetProvider } from 'react-helmet-async'
 // import HassPassword from '../components/projects/hash-password'
 
 function Router() {
     return (
-        <div>
+        <HelmetProvider>
             <BrowserRouter>
                 <Routes>
                     <Route element={<Layout />}>
@@ -35,8 +37,13 @@ function Router() {
                         <Route path="/contact" element={<Contact />} />
                     </Route>
                 </Routes>
+                <Routes>
+                    <Route element={<Layout />}>
+                        <Route path="/posts/:id" element={<Post />} />
+                    </Route>
+                </Routes>
             </BrowserRouter>
-        </div>
+        </HelmetProvider>
     )
 }
 

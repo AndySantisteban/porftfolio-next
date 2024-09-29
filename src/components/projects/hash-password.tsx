@@ -1,5 +1,5 @@
 import Link from 'antd/es/typography/Link'
-import React from 'react'
+// import React from 'react'
 import Grid from '../Grid'
 
 function HassPassword() {

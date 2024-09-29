@@ -27,14 +27,26 @@ const items: MenuItem[] = [
                 key: 'first-automation-web',
                 label: 'First Automation (web)',
             },
-            // {
-            //     key: 'first-automation-app',
-            //     label: 'First Automation (app) - Nube industrial',
-            // },
-            // {
-            //     key: 'hash-password',
-            //     label: 'Hash Password / Password Generator',
-            // },
+            {
+                key: 'first-automation-app',
+                label: 'First Automation (app) - Nube industrial',
+            },
+            {
+                key: 'tracking-seller',
+                label: 'Tracking SelleR - Ripley',
+            },
+            {
+                key: 'iglesia-del-nazareno',
+                label: 'Iglesia Del Nazareno (Ferreñafe)',
+            },
+            {
+                key: 'multiservicios-infotec',
+                label: 'Multiservicios Infotec',
+            },
+            {
+                key: 'hass-password',
+                label: 'Hash Password / Password Generator',
+            },
             {
                 key: 'signape',
                 label: 'Signape  (Deep Learning)',
@@ -48,16 +60,8 @@ const items: MenuItem[] = [
                 label: 'Snake Filter',
             },
             {
-                key: 'jwt',
-                label: 'Test-and-convert-types',
-            },
-            {
                 key: 'jwtTemplate',
                 label: 'Json Web Token Template',
-            },
-            {
-                key: 'notas',
-                label: 'Notas con Firebase',
             },
         ],
     },

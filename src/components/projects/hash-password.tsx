@@ -11,7 +11,7 @@ function HassPassword() {
             <h3>Link:</h3>
             <Link href="https://hashpassword.vercel.app/">https://hashpassword.vercel.app/</Link>
             <Grid>
-                <img src="/hashpass.png" width={'100%'} />
+                <img src="https://media.licdn.com/dms/image/v2/C4D2DAQGBEryFICusvw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1670263393084?e=1728255600&v=beta&t=CANCSbBLX_ILppmClpXyJNT-vwIAL3o0eqIV5D45MqA" width={'100%'} />
             </Grid>
         </div>
     )

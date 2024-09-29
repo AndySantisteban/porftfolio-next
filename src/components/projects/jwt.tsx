@@ -1,4 +1,5 @@
 import Grid from '../Grid'
+import MarkdownPreview from '@uiw/react-markdown-preview'
 
 const Jwt = () => {
     return (
@@ -12,7 +13,12 @@ const Jwt = () => {
             <p>
                 <b>Usage:</b>
             </p>
-            <pre>{`
+            <MarkdownPreview
+                style={{ padding: 16 }}
+                wrapperElement={{
+                    'data-color-mode': 'light',
+                }}
+                source={`
     const useJwt = require 
     ('jsonwebtoken-template')
     # Define Object
@@ -41,7 +47,8 @@ const Jwt = () => {
     useJwt.verifyJwt(toker,varEnv)
     
     console.log(decoded)
-            `}</pre>
+            `}
+            />
 
             <p>
                 Visit:{' '}

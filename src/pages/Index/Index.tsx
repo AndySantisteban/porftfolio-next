@@ -51,16 +51,16 @@ function Index() {
             <Row>
                 {posts?.map((x) => {
                     return (
-                        <Col xs={24} sm={24} md={12} lg={12} xl={12} style={{ lineHeight: '1.5rem', padding: 10 }}>
+                        <Col key={x.id} xs={24} sm={24} md={12} lg={12} xl={12} style={{ lineHeight: '1.5rem', padding: 10 }}>
                             <Card
                                 hoverable
                                 actions={[
                                     '',
-                                    '',
-                                    '',
-                                    <Button onClick={() => navigate('/posts/' + x.id)}>
-                                        <TbLink /> Ver post
-                                    </Button>,
+                                    <div style={{ textAlign: 'end', paddingRight: '10px' }}>
+                                        <Button onClick={() => navigate('/posts/' + x.id)}>
+                                            <TbLink /> Ver post
+                                        </Button>
+                                    </div>,
                                 ]}
                             >
                                 <Meta title={x.title} description={x.subtitle} />

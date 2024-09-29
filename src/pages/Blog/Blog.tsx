@@ -45,7 +45,7 @@ const Post: React.FC = () => {
                 <meta name="description" content={`Andy Santisteban Post`} />
             </Helmet>
             <Row style={{ minHeight: '100%' }}>
-                <Col xs={24} sm={24} md={6} lg={6} xl={6}>
+                <Col xs={24} sm={24} md={6} lg={6} xl={6} style={{ paddingRight: '10px' }}>
                     <Title level={3}>Otros artículos</Title>
                     <Menu
                         items={posts?.map((x) => {
@@ -55,6 +55,7 @@ const Post: React.FC = () => {
                             }
                         })}
                         theme="light"
+                        style={{ paddingRight: '10px' }}
                     />
                 </Col>
                 <Col xs={24} sm={24} md={18} lg={18} xl={18}>

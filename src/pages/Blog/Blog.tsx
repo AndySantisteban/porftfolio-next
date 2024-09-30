@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import MarkdownPreview from '@uiw/react-markdown-preview'
 import { Col, Menu, Row } from 'antd'
 import { Post as IPost } from '../../models/post'
@@ -11,7 +11,7 @@ const Post: React.FC = () => {
     const [content, setContent] = useState<string | null>(null)
     const [posts, setPosts] = useState<IPost[]>([])
     const [message, setMessage] = useState<string>('Cargando')
-
+    const navigate = useNavigate()
     useEffect(() => {
         fetch('/blog/list.json')
             .then((x) => x.json())
@@ -45,7 +45,7 @@ const Post: React.FC = () => {
                 <meta name="description" content={`Andy Santisteban Post`} />
             </Helmet>
             <Row style={{ minHeight: '100%' }}>
-                <Col xs={24} sm={24} md={6} lg={6} xl={6} style={{ paddingRight: '10px' }}>
+                <Col xs={24} sm={24} md={8} lg={8} xl={8} style={{ paddingRight: '10px' }}>
                     <Title level={3}>Otros artículos</Title>
                     <Menu
                         items={posts?.map((x) => {
@@ -54,11 +54,12 @@ const Post: React.FC = () => {
                                 label: x.title,
                             }
                         })}
+                        onClick={(e) => navigate('/posts/' + e.key)}
                         theme="light"
                         style={{ paddingRight: '10px' }}
                     />
                 </Col>
-                <Col xs={24} sm={24} md={18} lg={18} xl={18}>
+                <Col xs={24} sm={24} md={16} lg={16} xl={16}>
                     {content ? (
                         <MarkdownPreview
                             source={content}

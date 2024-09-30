@@ -11,7 +11,7 @@ function Experience() {
             </Helmet>
             <Row>
                 <Col xs={24} sm={24} md={12} lg={12} xl={12} style={{ lineHeight: '1.5rem' }}>
-                    <h1>Mi experiencia laboral</h1>
+                    <Title level={2}>Mi experiencia laboral</Title>
                     <Timeline
                         mode="left"
                         items={[
@@ -98,7 +98,7 @@ function Experience() {
                     />
                 </Col>
                 <Col xs={24} sm={24} md={12} lg={12} xl={12} style={{ lineHeight: '1.5rem' }}>
-                    <h1>Mis trabajos</h1>
+                    <Title level={2}>Mis trabajos</Title>
                     <Timeline
                         mode="left"
                         items={[

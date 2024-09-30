@@ -1,4 +1,4 @@
-import { Button, Card, Col, Divider, Row } from 'antd'
+import { Avatar, Button, Card, Col, Divider, List, Row } from 'antd'
 import Yo from '/person-with-logos.png'
 import { useEffect, useState } from 'react'
 import Meta from 'antd/es/card/Meta'
@@ -7,6 +7,7 @@ import { TbLink } from 'react-icons/tb'
 import { useNavigate } from 'react-router-dom'
 import ReactPlayer from 'react-player'
 import { Helmet } from 'react-helmet-async'
+import Title from 'antd/es/typography/Title'
 
 const YoutubeUrl: Post[] = [
     {
@@ -52,6 +53,44 @@ const YoutubeUrl: Post[] = [
         author: 'Andy Santisteban',
     },
 ]
+
+const Recomendations: Post[] = [
+    {
+        id: 1,
+        date: new Date(),
+        title: 'Jorge Luis Calle Morales',
+        subtitle: 'Buen supervisor y líder de equipo, gestionando tiempos y acciones de manera precisa, llegando a mejorar la productividad del proyecto y enseñando sobre el uso de metodologías ágiles y arquitecturas para el desarrollo de codigo, un profesional destacable',
+        author: 'https://media.licdn.com/dms/image/v2/C4D03AQEflvGS_wqUEg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1654014911305?e=1733356800&v=beta&t=mmKrnIYrG56Z-AtpuyOnDtYq-Gx2xVUhMUiioFHENyA',
+    },
+    {
+        id: 2,
+        date: new Date(),
+        title: 'Dante Villa Rodriguez',
+        subtitle: 'Excelente profesional, dispuesto siempre a cumplir con sus tareas y brindar apoyo al equipo.',
+        author: 'https://media.licdn.com/dms/image/v2/D4E35AQF-8Wv7G5Sb5Q/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1725922967027?e=1728284400&v=beta&t=LrdqYBPGLY2GjVMq-YFHhPifnZQeQIpgRZTfGuU5twQ',
+    },
+    {
+        id: 3,
+        date: new Date(),
+        title: 'Yessica Milagros Huillca Lloclle',
+        subtitle: 'Andy fue profesional en todo el proyecto desempeñó como desarrollador parte de la célula Tracking Seller. Puede lograr mayores exitosos en el futuro.',
+        author: 'https://media.licdn.com/dms/image/v2/C4E03AQHrZDQk-xSoyg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1560899472497?e=1733356800&v=beta&t=ZvVaCf74KwrAiFJBiMS3YgSdQ7XqLCMYnNOKDLg8j4o',
+    },
+    {
+        id: 4,
+        date: new Date(),
+        title: 'Samuel Sánchez Pardo',
+        subtitle: 'Excelente profesional, tuve el agrado de estudiar con el en la universidad buscando siempre implementar lo mejor para los trabajos.',
+        author: 'https://static-00.iconduck.com/assets.00/user-icon-512x512-r62xmy4p.png',
+    },
+    {
+        id: 5,
+        date: new Date(),
+        title: 'Nicolette Isis Pacheco Contreras',
+        subtitle: 'Andy es una persona con valores, que le apasiona programar al pasar con el tiempo va adquiriendo más conocimiento de las nuevas tecnologías y lenguaje de programación que aplica en sus proyectos de estudio y trabajo. Su experiencia ayuda al grupo de trabajo a realizar proyectos de calidad.',
+        author: 'https://static-00.iconduck.com/assets.00/user-icon-512x512-r62xmy4p.png',
+    },
+]
 function Index() {
     const [posts, setPosts] = useState<Post[]>([])
     const navigate = useNavigate()
@@ -67,7 +106,7 @@ function Index() {
             <Helmet>
                 <title>Andy Santisteban</title>
             </Helmet>
-            <h1>Sobre mí</h1>
+            <Title level={1}>Sobre mí</Title>
             <br />
             <Row>
                 <Col xs={24} sm={24} md={20} lg={20} xl={20} style={{ lineHeight: '1.5rem' }}>
@@ -82,10 +121,11 @@ function Index() {
                         }}
                     >
                         <Button
-                            type="default"
+                            color="default"
                             onClick={() => {
                                 window.location.href = '/Profile.pdf'
                             }}
+                            variant="solid"
                         >
                             Descargar CV
                         </Button>
@@ -96,7 +136,18 @@ function Index() {
                 </Col>
             </Row>
             <Divider />
-            <h2>Blog</h2>
+            <Title level={2}>Recomendaciones</Title>
+            <List
+                itemLayout="horizontal"
+                dataSource={Recomendations}
+                renderItem={(item) => (
+                    <List.Item>
+                        <List.Item.Meta avatar={<Avatar src={`${item.author}`} />} title={<a href="https://ant.design">{item.title}</a>} description={item.subtitle} />
+                    </List.Item>
+                )}
+            />
+            <Divider />
+            <Title level={2}>Blog</Title>
             <Row>
                 {posts?.map((x) => {
                     return (
@@ -106,7 +157,7 @@ function Index() {
                                 actions={[
                                     '',
                                     <div style={{ textAlign: 'end', paddingRight: '10px' }}>
-                                        <Button onClick={() => navigate('/posts/' + x.id)}>
+                                        <Button onClick={() => navigate('/posts/' + x.id)} color="default" variant="solid">
                                             <TbLink /> Ver post
                                         </Button>
                                     </div>,
@@ -119,7 +170,7 @@ function Index() {
                 })}
             </Row>
             <Divider />
-            <h2>Videos</h2>
+            <Title level={2}>Videos</Title>
             <Row>
                 {YoutubeUrl?.map((x) => {
                     return (
@@ -131,6 +182,7 @@ function Index() {
                     )
                 })}
             </Row>
+            <Divider />
         </div>
     )
 }

@@ -37,7 +37,7 @@ const Contact = () => {
                             <ValidationError prefix="Message" field="message" errors={state.errors} />
                         </div>
                         <div style={{ marginTop: '10px' }}>
-                            <Button type="primary" htmlType="submit" disabled={state.submitting} onClick={openModal}>
+                            <Button color="default" variant="solid" htmlType="submit" disabled={state.submitting} onClick={openModal}>
                                 Enviar
                             </Button>
                         </div>

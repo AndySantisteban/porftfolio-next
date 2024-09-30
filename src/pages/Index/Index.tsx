@@ -6,6 +6,7 @@ import { Post } from '../../models/post'
 import { TbLink } from 'react-icons/tb'
 import { useNavigate } from 'react-router-dom'
 import ReactPlayer from 'react-player'
+import { Helmet } from 'react-helmet-async'
 
 const YoutubeUrl: Post[] = [
     {
@@ -63,6 +64,9 @@ function Index() {
     }, [])
     return (
         <div>
+            <Helmet>
+                <title>Andy Santisteban</title>
+            </Helmet>
             <h1>Sobre mí</h1>
             <br />
             <Row>

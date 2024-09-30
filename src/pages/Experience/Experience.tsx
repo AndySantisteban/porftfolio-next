@@ -1,10 +1,14 @@
 import { Col, Row, Timeline } from 'antd'
 import Title from 'antd/es/typography/Title'
+import { Helmet } from 'react-helmet-async'
 import { TbClock } from 'react-icons/tb'
 
 function Experience() {
     return (
         <div>
+            <Helmet>
+                <title>Experiencia Laboral</title>
+            </Helmet>
             <Row>
                 <Col xs={24} sm={24} md={12} lg={12} xl={12} style={{ lineHeight: '1.5rem' }}>
                     <h1>Mi experiencia laboral</h1>

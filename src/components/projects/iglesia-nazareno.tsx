@@ -1,9 +1,13 @@
 import Link from 'antd/es/typography/Link'
 import Grid from '../Grid'
+import { Helmet } from 'react-helmet-async'
 
 function IglesiaNazareno() {
     return (
         <div>
+            <Helmet>
+                <title>Iglesia del Nazareno</title>
+            </Helmet>
             <h1>Iglesia del Nazareno</h1>
             <div>Una pagina web para la iglesia del nazareno de Ferreñafe donde pueden acceder a bibliografìa, history y links de cultos.</div>
             <h3>Link:</h3>

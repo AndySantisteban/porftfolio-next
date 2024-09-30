@@ -1,5 +1,5 @@
 import { Outlet, useNavigate } from 'react-router-dom'
-import { Flex, Layout as AntdLayout, Menu } from 'antd'
+import { Flex, Layout as AntdLayout, Menu, Row, Col } from 'antd'
 import { Content, Footer } from 'antd/es/layout/layout'
 import Sider from 'antd/es/layout/Sider'
 import type { MenuProps } from 'antd'
@@ -118,17 +118,26 @@ function Layout() {
                     }}
                 >
                     © 2024 Andy Santisteban
-                    <div>
-                        <a href="https://www.facebook.com/AndySantisteban1607/" className="container__networks__item" target="_blank">
-                            <img src="https://img.icons8.com/color/25/000000/facebook.png" alt={'...'} />
-                        </a>
-                        <a href="https://wa.link/5ayf76" className="container__networks__item" target="_blank">
-                            <img src="https://img.icons8.com/office/25/000000/whatsapp--v1.png" alt={'...'} />
-                        </a>
-                        <a href="https://www.linkedin.com/in/andy-santisteban/" className="container__networks__item" target="_blank">
-                            <img src="https://img.icons8.com/fluency/25/000000/linkedin.png" alt={'...'} />
-                        </a>
-                    </div>
+                    <Row>
+                        <Col xs={24} sm={24} md={6} lg={6} xl={6}>
+                            <a href="https://www.facebook.com/AndySantisteban1607/" style={{ display: 'flex', alignItems: 'center', gap: '10px' }} target="_blank">
+                                <img src="https://img.icons8.com/color/25/000000/facebook.png" alt={'...'} />
+                                Andy Santisteban
+                            </a>
+                        </Col>
+                        <Col xs={24} sm={24} md={6} lg={6} xl={6}>
+                            <a href="https://wa.link/5ayf76" style={{ display: 'flex', alignItems: 'center', gap: '10px' }} target="_blank">
+                                <img src="https://img.icons8.com/office/25/000000/whatsapp--v1.png" alt={'...'} />
+                                Andy Santisteban
+                            </a>
+                        </Col>
+                        <Col xs={24} sm={24} md={6} lg={6} xl={6}>
+                            <a href="https://www.linkedin.com/in/andy-santisteban/" style={{ display: 'flex', alignItems: 'center', gap: '10px' }} target="_blank">
+                                <img src="https://img.icons8.com/fluency/25/000000/linkedin.png" alt={'...'} />
+                                Andy Santisteban
+                            </a>
+                        </Col>
+                    </Row>
                 </Footer>
             </AntdLayout>
         </Flex>

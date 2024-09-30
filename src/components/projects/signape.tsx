@@ -1,9 +1,13 @@
 import Link from 'antd/es/typography/Link'
 import Grid from '../Grid'
+import { Helmet } from 'react-helmet-async'
 
 function Signape() {
     return (
         <div>
+            <Helmet>
+                <title>Signape</title>
+            </Helmet>
             <h1>Signape</h1>
             <div>
                 🔬 Aplicación de videollamadas con traducción de lenguaje de señas peruano (Abecedario)

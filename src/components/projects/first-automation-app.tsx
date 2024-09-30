@@ -1,8 +1,12 @@
+import { Helmet } from 'react-helmet-async'
 import Grid from '../Grid'
 
 function FirsAutomationApp() {
     return (
         <div>
+            <Helmet>
+                <title>First Automation App - Nube Industrial</title>
+            </Helmet>
             <h1>First Automation App - Nube Industrial</h1>
             <div>Gráficos estadisticos y en tiempo real usando Subscripciones de Graphql, inspirados en Influx DB</div>
             <Grid>

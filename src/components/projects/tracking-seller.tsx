@@ -1,9 +1,13 @@
+import { Helmet } from 'react-helmet-async'
 import Grid from '../Grid'
 import Link from 'antd/es/typography/Link'
 
 function TrackingSeller() {
     return (
         <div>
+            <Helmet>
+                <title>Tracking SelleR</title>
+            </Helmet>
             <h1>Tracking SelleR</h1>
             <div>Tracking SelleR - Desarrollado por equipo de desarrollo MDP y IT Data</div>
             <h3>Link:</h3>

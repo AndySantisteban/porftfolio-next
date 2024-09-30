@@ -41,7 +41,7 @@ const Post: React.FC = () => {
     return (
         <div className="post-container">
             <Helmet>
-                <title> Andy Santisteban Post</title>
+                <title>Blog</title>
                 <meta name="description" content={`Andy Santisteban Post`} />
             </Helmet>
             <Row style={{ minHeight: '100%' }}>

@@ -1,9 +1,13 @@
 import Link from 'antd/es/typography/Link'
 import Grid from '../Grid'
+import { Helmet } from 'react-helmet-async'
 
 function FirstAutomation() {
     return (
         <div>
+            <Helmet>
+                <title>First Automation App</title>
+            </Helmet>
             <h1>First Automation App</h1>
 
             <p>Alertas y Reportes personalizados del proceso industrial</p>

@@ -2,6 +2,7 @@ import { useForm, ValidationError } from '@formspree/react'
 import { Button, Card, Input, Modal } from 'antd'
 import TextArea from 'antd/es/input/TextArea'
 import { useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 
 const Contact = () => {
     const [state, handleSubmit] = useForm('xqkwgkzk')
@@ -19,6 +20,9 @@ const Contact = () => {
 
     return (
         <>
+            <Helmet>
+                <title> Contacto </title>
+            </Helmet>
             <div style={{ display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'center' }}>
                 <Card style={{ minWidth: '400px' }} cover={<img alt="" src="https://ih1.redbubble.net/image.2971128221.1552/raf,360x360,075,t,fafafa:ca443f4786.jpg" />}>
                     <form name="contact" method="POST" onSubmit={handleSubmit}>

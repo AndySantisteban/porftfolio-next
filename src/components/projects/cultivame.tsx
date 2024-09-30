@@ -1,9 +1,13 @@
 import Link from 'antd/es/typography/Link'
 import Grid from '../Grid'
+import { Helmet } from 'react-helmet-async'
 
 function Cultivame() {
     return (
         <div>
+            <Helmet>
+                <title>Cultivame App</title>
+            </Helmet>
             <h1>CultivaMe</h1>
             <div>
                 🌾 CultivaMe (BETA)

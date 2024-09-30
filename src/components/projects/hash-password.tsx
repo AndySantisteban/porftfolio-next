@@ -1,10 +1,14 @@
 import Link from 'antd/es/typography/Link'
 // import React from 'react'
 import Grid from '../Grid'
+import { Helmet } from 'react-helmet-async'
 
 function HassPassword() {
     return (
         <div>
+            <Helmet>
+                <title>Hash Password</title>
+            </Helmet>
             <h1> Hash Password</h1>
             <div>Encripta tu contraseña con MD5</div>
 

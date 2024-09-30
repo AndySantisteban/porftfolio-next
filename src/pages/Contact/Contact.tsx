@@ -24,7 +24,7 @@ const Contact = () => {
                 <title> Contacto </title>
             </Helmet>
             <div style={{ display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'center' }}>
-                <Card style={{ minWidth: '400px' }} cover={<img alt="" src="https://ih1.redbubble.net/image.2971128221.1552/raf,360x360,075,t,fafafa:ca443f4786.jpg" />}>
+                <Card style={{ minWidth: '400px' }} cover={<img alt="" src="/contact-logo.png" />}>
                     <form name="contact" method="POST" onSubmit={handleSubmit}>
                         <div>
                             <label htmlFor="email">Correo electrónico:</label>

@@ -78,10 +78,10 @@ const items: MenuItem[] = [
                 key: 'jwtTemplate',
                 label: 'Json Web Token Template',
             },
-            {
-                key: '',
-                label: 'Ver más proyectos',
-            },
+            // {
+            //     key: '',
+            //     label: 'Ver más proyectos',
+            // },
         ],
     },
     {

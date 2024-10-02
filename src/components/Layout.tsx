@@ -24,6 +24,21 @@ const items: MenuItem[] = [
         icon: <TbCode />,
         children: [
             {
+                key: 'microfrontend-generator',
+                label: 'Microfrontend Generator (Go y Vite.js)',
+                disabled: true,
+            },
+            {
+                key: 'frontend-generator-template',
+                label: 'Frontend Generator Template (Go)',
+                disabled: true,
+            },
+            {
+                key: 'ticketing-system',
+                label: 'Sistema de ticketing',
+                disabled: true,
+            },
+            {
                 key: 'first-automation-web',
                 label: 'First Automation (web)',
             },
@@ -63,6 +78,10 @@ const items: MenuItem[] = [
                 key: 'jwtTemplate',
                 label: 'Json Web Token Template',
             },
+            {
+                key: '',
+                label: 'Ver más proyectos',
+            },
         ],
     },
     {
@@ -85,6 +104,7 @@ function Layout() {
             wrap
             style={{
                 minHeight: '100vh',
+                background: 'white',
             }}
         >
             <AntdLayout>
@@ -109,7 +129,9 @@ function Layout() {
                             padding: 24,
                         }}
                     >
-                        <Outlet />
+                        <div>
+                            <Outlet />
+                        </div>
                     </Content>
                 </AntdLayout>
                 <Footer

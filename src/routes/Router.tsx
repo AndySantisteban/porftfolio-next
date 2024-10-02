@@ -43,6 +43,7 @@ function Router() {
                         <Route path="/proyects/hass-password" element={<HassPassword />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/posts/:id" element={<Post />} />
+                        <Route path="*" element={<Index />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

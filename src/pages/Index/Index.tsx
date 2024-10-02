@@ -136,17 +136,6 @@ function Index() {
                 </Col>
             </Row>
             <Divider />
-            <Title level={2}>Recomendaciones</Title>
-            <List
-                itemLayout="horizontal"
-                dataSource={Recomendations}
-                renderItem={(item) => (
-                    <List.Item>
-                        <List.Item.Meta avatar={<Avatar src={`${item.author}`} />} title={<a href="https://ant.design">{item.title}</a>} description={item.subtitle} />
-                    </List.Item>
-                )}
-            />
-            <Divider />
             <Title level={2}>Blog</Title>
             <Row>
                 {posts?.map((x) => {
@@ -175,13 +164,23 @@ function Index() {
                 {YoutubeUrl?.map((x) => {
                     return (
                         <Col key={x.id} xs={24} sm={24} md={8} lg={8} xl={8} style={{ lineHeight: '1.5rem', padding: 10 }}>
-                            <Card hoverable cover={<ReactPlayer url={x.subtitle} width={'100%'} height={'120%'} />}>
+                            <Card hoverable cover={<ReactPlayer url={x.subtitle} width={'100%'} />}>
                                 <Meta title={x.title} description={x.author} />
                             </Card>
                         </Col>
                     )
                 })}
             </Row>
+            <Title level={2}>Recomendaciones</Title>
+            <List
+                itemLayout="vertical"
+                dataSource={Recomendations}
+                renderItem={(item) => (
+                    <List.Item>
+                        <List.Item.Meta avatar={<Avatar src={`${item.author}`} />} title={<a>{item.title}</a>} description={item.subtitle} />
+                    </List.Item>
+                )}
+            />
             <Divider />
         </div>
     )

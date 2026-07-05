@@ -8,7 +8,7 @@ export interface Job {
 
 export const jobs: Job[] = [
   {
-    company: "Unified Software",
+    company: "Unified Software ",
     role: "Full-stack Developer",
     period: "Agosto 2022 — Presente",
     current: true,

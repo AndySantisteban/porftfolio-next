@@ -1,0 +1,35 @@
+---
+title: "Blockchain más allá de las criptomonedas: casos de uso innovadores"
+date: "2022-07-22"
+excerpt: "Breve explicación sobre la tecnología blockchain y su alcance."
+---
+
+# Blockchain más allá de las Criptomonedas: Casos de Uso Innovadores
+
+## Introducción
+
+Breve explicación sobre la tecnología blockchain y su alcance más allá de las criptomonedas.
+
+## Casos de uso de blockchain en diferentes sectores
+
+### Blockchain en la cadena de suministro
+
+-   Trazabilidad de productos
+-   Gestión de la logística
+-   Verificación de autenticidad
+
+### Blockchain en el sector inmobiliario
+
+-   Registro de propiedades
+-   Transacciones seguras
+-   Contratos inteligentes
+
+### Blockchain en el sector energético
+
+-   Comercio de energía renovable
+-   Microrredes descentralizadas
+-   Certificados de origen de energía
+
+## Desafíos y limitaciones actuales
+
+Contenido sobre los retos y obstáculos que enfrenta la adopción de blockchain.

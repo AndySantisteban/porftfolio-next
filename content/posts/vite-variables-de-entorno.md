@@ -6,7 +6,6 @@ excerpt: "Aprende a configurar variables de entorno en Vite para trabajar con di
 
 # Tutorial: Manejo de Variables de Entorno en Vite
 
-![Variables de entorno en Vite](https://vitejs.dev/og-image.png)
 
 Cuando un proyecto comienza a crecer, tarde o temprano aparece el mismo problema: hay valores que cambian dependiendo del entorno donde se ejecuta la aplicación. Durante el desarrollo probablemente consumas una API local, mientras que en producción utilizarás otra URL completamente distinta.
 

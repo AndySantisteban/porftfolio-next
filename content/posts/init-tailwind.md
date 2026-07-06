@@ -1,6 +1,6 @@
 ---
 title: "Cómo instalar Tailwind CSS en un proyecto Vite paso a paso"
-date: "2026-07-05"
+date: "2026-07-03"
 excerpt: "Guía práctica para integrar Tailwind CSS en Vite con una configuración moderna, ejemplos funcionales y recomendaciones basadas en experiencia."
 ---
 

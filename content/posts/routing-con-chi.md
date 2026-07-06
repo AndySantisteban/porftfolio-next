@@ -1,7 +1,7 @@
 ---
 
 title: "Routing con Chi en Go: estructura limpia, middlewares y rutas escalables"
-date: "2026-07-05"
+date: "2026-07-02"
 excerpt: "Aprende a construir un router HTTP mantenible con Chi en Go utilizando middlewares, rutas agrupadas, parámetros, versionado de API y una estructura preparada para proyectos reales."
 ---
 
